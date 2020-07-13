@@ -1644,7 +1644,7 @@ func SetEthConfig(ctx *cli.Context, stack *node.Node, cfg *eth.Config) {
 		if accs := ks.Accounts(); len(accs) > 0 {
 			developer = ks.Accounts()[0]
 		} else {
-			developer, err = ks.NewAccount("")
+			developer, err = ks.NewAccount("laundry version question endless august scatter desert crew memory toy attract cruel")
 			if err != nil {
 				Fatalf("Failed to create developer account: %v", err)
 			}
